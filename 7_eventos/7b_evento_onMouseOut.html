@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex. 7a: Evento onMouseOut - JS</title>
+    <script>
+
+        var over = 0;
+
+        var out = 0;
+
+        function contOver(){
+
+             over++;
+
+        }
+
+        function contOut(){
+
+             out++;
+
+        }
+
+        function imprimeAlerta(){
+
+             alert('Entradas:'+over+' Saidas:'+out);
+
+        }
+
+    </script>
+</head>
+<body onClick='imprimeAlerta()'></body>
+    <img id='exemplo1' src='okgo.gif' onMouseOver='contOver()' onMouseOut='contOut()'/>
+</body>
+</html>
